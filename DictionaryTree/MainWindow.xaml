@@ -6,10 +6,10 @@
     <DockPanel>
         
         <Grid Width="150" VerticalAlignment="Stretch">
-            <TreeView Name="trvStructure" TreeViewItem.Expanded="TreeViewItem_Expanded" Margin="10" />
+            <TreeView Name="trvStructure" TreeViewItem.Expanded="TreeViewItem_Expanded" TreeViewItem.Selected="TreeViewItem_Selected" Margin="10" />
         </Grid>
         <Grid Width="150">
-            <TextBox Text="Тест"/>
+            <TreeView Name="trvStructure2" TreeViewItem.Expanded="TreeViewItem_Expanded" TreeViewItem.Selected="TreeViewItem_Selected" Margin="10" />
         </Grid>
 
         <StackPanel 

@@ -2,7 +2,7 @@
     {
         "id": 1138,
         "parent_id": 113,
-	"cnt_leafs": 1,
+	"cnt_leafs": 0,
         "caption": "TestCaption11",
         "abbr": "TestAbbr",
         "uname": "WithNullTest",
@@ -30,7 +30,7 @@
     {
         "id": 11108,
         "parent_id": 113,
-	"cnt_leafs": 1,
+	"cnt_leafs": 0,
         "caption": "TestCaption31",
         "abbr": "TestAbbr",
         "uname": "UNameTest",

@@ -48,6 +48,9 @@ namespace DictionaryTree
             }
 
 
+
+
+
         }
 
         private TreeViewItem CreateTreeItem(CLib o)
@@ -104,6 +107,36 @@ namespace DictionaryTree
 
                
             }
+        }
+
+        public void TreeViewItem_Selected(object sender, RoutedEventArgs e)
+        {
+            TreeViewItem item = e.Source as TreeViewItem;
+            CLib cl = item.DataContext as CLib;
+            //MessageBox.Show(cl.CntLeafs.ToString());
+            try
+            {
+                var singIn = Task.Run(() => LoadJson.ReadAsync<CLib[]>(@$"C:\KursCSharp\MyProj\DictionaryTree\others\TreeTest{cl.Id}.json")).Result;
+
+                List<CLib> list = new List<CLib>();
+                /* DriveInfo[] drives = DriveInfo.GetDrives();
+                 foreach (DriveInfo driveInfo in drives)
+                     trvStructure.Items.Add(CreateTreeItem(driveInfo));*/
+                // trvStructure.DataContext = node;
+                trvStructure2.Items.Clear();
+                if (singIn != null)
+                {
+                    foreach (CLib node in singIn)
+                    {
+
+                        trvStructure2.Items.Add(CreateTreeItem(node));
+
+
+
+                    }
+                }
+            }catch{ }
+
         }
 
 
