@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1138,
+        "parent_id": 113,
+	"cnt_leafs": 1,
+        "caption": "TestCaption11",
+        "abbr": "TestAbbr",
+        "uname": "WithNullTest",
+        "date_start": null,
+        "date_end": null,
+        "note": null,
+        "d_updated": null,
+        "connection_info_id": null,
+        "event_onupdatedata": null
+    },
+    {
+        "id": 1148,
+        "parent_id": 113,
+	"cnt_leafs": 0,
+        "caption": "TestCaption21",
+        "abbr": "TestAbbr",
+        "uname": "WithDateTest",
+        "date_start": null,
+        "date_end": null,
+        "note": null,
+        "d_updated": null,
+        "connection_info_id": null,
+        "event_onupdatedata": null
+    },
+    {
+        "id": 11108,
+        "parent_id": 113,
+	"cnt_leafs": 1,
+        "caption": "TestCaption31",
+        "abbr": "TestAbbr",
+        "uname": "UNameTest",
+        "date_start": null,
+        "date_end": null,
+        "note": "NoteTest",
+        "d_updated": null,
+        "connection_info_id": null,
+        "event_onupdatedata": null
+    }
+]
